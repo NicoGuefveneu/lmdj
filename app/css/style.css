@@ -1076,7 +1076,12 @@
 		}
 
 		.wrapper.style2 header {
-			margin-bottom: 4em;
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+
+		.wrapper.style2 header {
+			margin-bottom: 1em;
 		}
 
 		.wrapper.style2 .feature {
@@ -1085,6 +1090,14 @@
 
 		.wrapper.style2 .feature ul {
 			text-align: left;
+		}
+
+		.wrapper.style2 h2, .wrapper.style2 h3 {
+			color: #fff;
+		}
+
+		.wrapper.realisationWrapper header {
+			margin-bottom: 0;
 		}
 
 /* Footer */
@@ -1158,4 +1171,12 @@
 
 #navButton {
 	display: none !important;
+}
+
+/* realisation article */
+
+.realisation {
+	border-top: medium double rgba(255, 255, 255, 0.35);
+	padding-top: 2em;
+	padding-bottom: 4em;
 }

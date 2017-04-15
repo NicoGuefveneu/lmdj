@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>La Maison des Jeux | Entretien et maintenance de vos aires de jeux</title>
+		<title>La Maison des Jeux | Entretien, maintenance et pose de vos aires de jeux</title>
 		<link rel="icon" href="favicon.ico" />
 		<meta name="description" content="La Maison des Jeux réalise, pour votre sécurité, les contrôles et la maintenance de vos aires de jeux, en Bretagne, Morbihan." />
 		<meta name="keywords" content="la Maison des jeux, maison, jeux, pose, poseur, installateur, aires de jeux, maintenance, entretien, Bretagne, Morbihan, contrôle, sol, amortissant, souple, ludique, sportif" />
@@ -26,10 +26,21 @@
 	</head>
 	<body class="landing">
 
+		<!-- Header -->
+			<header id="header">
+				<nav id="nav">
+					<ul>
+						<li><a href="">Accueil</a></li>
+						<li><a href="realisations.html">Réalisations</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Header -->
+
 		<!-- Banner -->
 			<section id="banner">
 				<h1>La Maison des Jeux</h1>
-				<p>Entretien et maintenance de vos aires de jeux en Bretagne</p>
+				<p>Entretien, maintenance et pose de vos aires de jeux en Bretagne</p>
 				<ul class="actions">
 					<li>
 						<a href="#" class="button big">En savoir plus</a>
@@ -49,9 +60,9 @@
 							<i class="icon big rounded fa-pencil"></i>
 							<p>Création d'aires de jeux</p>
 						</section>
-						<section id="sols" class="4u$ 12u$(small)">
-							<i class="icon big rounded fa-th-large"></i>
-							<p>Sol amortissant</p>
+						<section id="realisation" class="4u$ 12u$(small)">
+							<i class="icon big rounded fa-camera-retro"></i>
+							<p>Réalisations</p>
 						</section>
 					</div>
 				</div>
@@ -93,7 +104,7 @@
 							</p>
 						</section>
 						<section id="airesDetail" class="feature 6u 12u$(small)">
-							<img class="image fit" src="images/95_enghien_les_bains_2012_n04.jpg" alt="création aires de jeux bretagne" />
+							<img class="image fit" src="images/creation-bretagne-aires-de-jeux.jpg" alt="création aires de jeux bretagne" />
 							<h3 class="title align-center">Création d'aires de jeux</h3>
 							<p>
 								La Maison des Jeux vous propose de s’occuper de la création de vos espaces ludiques et sportifs avec une solution clé en main.
@@ -112,7 +123,7 @@
 							</p>
 						</section>
 						<section id="solsDetail" class="feature 6u$ 12u$(small)">
-							<img class="image fit" src="images/sol-nuancier-2.jpg" alt="maintenance aires de jeux sols souples" />
+							<img class="image fit" src="images/sol-amortissant-souple.jpg" alt="maintenance aires de jeux sols souples" />
 							<h3 class="title align-center">Sols amortissants ou souples</h3>
 							<p>
 								La Maison des Jeux réalise pour vous des sols amortissants coulés sur place aux normes NF EN 1176, NF EN 1177, ce sol se compose de deux parties :
@@ -187,12 +198,12 @@
 			$('#aires').click(function() {
 				scrollToAnchor('airesDetail');
 			});
-			$('#sols').click(function() {
-				scrollToAnchor('solsDetail');
+			$('#realisation').click(function() {
+				location.href = "realisations.html";
 			});
 		</script>
 
-		<script type="text/javascript" id="cookiebanner" src="http://cookiebanner.eu/js/cookiebanner.min.js" data-position="top" data-fg="#ffffff" data-bg="#3b5269" data-link="#dddddd" data-moreinfo="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi/" data-message="En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies afin d'assurer le bon déroulement de votre visite et réaliser des statistiques d'audience." data-linkmsg="En savoir plus"></script>
+		<script type="text/javascript" id="cookiebanner" src="http://cookiebanner.eu/js/cookiebanner.min.js" data-position="bottom" data-fg="#ffffff" data-bg="#3b5269" data-link="#dddddd" data-moreinfo="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi/" data-message="En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de nos cookies afin de vous offrir une meilleure utilisation de ce site internet." data-linkmsg="En savoir plus"></script>
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -202,7 +213,6 @@
 
 		  ga('create', 'UA-87159270-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 
 	</body>

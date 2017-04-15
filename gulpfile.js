@@ -26,13 +26,14 @@ var bases = {
 
 // paths
 var paths = {
-  html: ['index.html'],
+  html: ['*.html'],
   favicon: ['favicon.ico'],
   css: ['css/*.css'],
   cssIeToCopy: ['css/ie/*'],
   cssImagesToCopy: ['css/images/*'],
   images: ['images/**/*'],
   libs: ['js/**/*.js'],
+  externalLibs: ['lib/**/*'],
   fonts: ['fonts/**/*']
 };
 
@@ -75,6 +76,11 @@ gulp.task('copy', ['clean'], function() {
 // Copy libs
 gulp.src(paths.libs, {cwd: bases.app})
 .pipe(gulp.dest(bases.dist + 'js/'));
+
+// Copy external libs
+
+gulp.src(paths.externalLibs, {cwd: bases.app})
+.pipe(gulp.dest(bases.dist + 'lib/'));
 
 // Copy font
 gulp.src(paths.fonts, {cwd: bases.app})
